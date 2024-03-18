@@ -1,0 +1,65 @@
+/* Style the form container */
+form {
+    width: 500px;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    padding: 20px;
+<<<<<<< HEAD
+    border: 1px solid #ff005d;
+    border-radius: 15px;
+=======
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url(bg1.jpeg);
+>>>>>>> 16dfd4f809240b550fa3017b92afe04ba7a515fd
+  }
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  color: #ff005d;
+}
+  
+  /* Style the form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 200;
+  }
+  
+  /* Style the form inputs */
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  /* Style the submit button */
+  button {
+<<<<<<< HEAD
+    background-color: #ff005d;
+=======
+    background-color: #E95468;
+>>>>>>> 16dfd4f809240b550fa3017b92afe04ba7a515fd
+    color: white;
+    margin-left: 120px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  /* Style the form group */
+  .form-group {
+    margin-bottom: 15px;
+    border-radius: 30px;
+  }
+
+  .form-group button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  

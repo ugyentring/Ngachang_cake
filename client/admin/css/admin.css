@@ -1,0 +1,172 @@
+/* body {
+    display: flex;
+    margin: 0;
+} */
+
+.admin-dashboard {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar{
+width: 350px;
+height: 1000px;
+flex-shrink: 0;
+background: #2F2F2F;
+}
+
+.text1{
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    /* font-family: Inter; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.text1 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* .adminProfile i { 
+    color: #ffffff;
+ 
+} */
+
+
+
+.title{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.titlee{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.wholecard{
+    display: flex;
+    flex-direction: row;
+    margin-left: 140px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 209px;
+    height: 117px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 0.2px solid #000;
+    background: #f1c0c0;
+    border: none;
+    margin-left: 80px;
+}
+
+.cardicon{
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+.icon{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 64px;
+background: #f4fae9;
+}
+
+.bigcard{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.wholecard2{
+    width: 650px;
+    height: 431px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #B0BB9A;
+    margin-left: 30px;
+    margin-top: 20px;
+ 
+}
+
+.mincard{
+    width: 295px;
+    height: 121px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+    border: none;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+
+}
+
+.mincard img{
+    margin-top:13px;
+    margin-left: 5px;
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+}
+.mincard p{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.card3{
+    width: 390px;
+    height: 421px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #B0BB9A;
+    margin-left:80px;
+    margin-top: 20px;
+}
+
+.box{
+    width: 350px;
+    height: 63px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.user p {
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+
+.otherside{
+    display: flex;
+    flex-direction: row;
+}

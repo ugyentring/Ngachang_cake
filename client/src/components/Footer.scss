@@ -1,0 +1,126 @@
+.footer {
+    flex-shrink: 0;
+    width: 100%;
+    height: 170px;
+    color: #d5d5d5;
+    background-color: #3d3d3d;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    &__social-links {
+        display: flex;
+    }
+}
+
+.footer-menu {
+    display: flex;
+
+    &__column {
+        margin-right: 60px;
+        font-size: 16px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        color: #d5d5d5;
+        text-decoration: none;
+        transition: 0.1s ease;
+
+        &:hover {
+            color: #efefef;
+            text-decoration: underline;
+        }
+
+        &.icon-credits:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.icon-credits {
+    &__link {
+        color: #d5d5d5;
+        text-decoration: none;
+
+        &:hover {
+            color: #efefef;
+            text-decoration: underline;
+        }
+    }
+
+    &__text {
+        color: #d5d5d5;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.link {
+    &__vk, &__ig {
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        padding: 3px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__vk:hover, &__ig:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+svg:hover {
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: 290px;
+
+        &__container {
+            flex-direction: column;
+            justify-content: normal;
+        }
+
+        &__social-links > a:first-child {
+            margin-left: 0;
+        }
+    }
+
+    .footer-menu {
+        flex-direction: column-reverse;
+        width: 100%;
+
+        &__column {
+            margin: 0 0 30px 0;
+        }
+    }
+}

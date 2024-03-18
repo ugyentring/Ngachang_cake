@@ -1,0 +1,222 @@
+@use "../Variables";
+
+.header {
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 3px 20px 2px rgba(0, 0, 0, 0.1);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 15px 20px;
+    }
+}
+
+.logo__color-part {
+    color: Variables.$accent;
+}
+
+.logo > .nav__link {
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+    font-weight: 400;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.nav {
+    &__item {
+        display: inline-block;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &.cart__icon {
+            height: 24px;
+            width: 24px;
+        }
+
+        &:hover {
+            color: Variables.$accent;
+        }
+    }
+}
+
+.cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70px;
+
+    &__count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 35px;
+        height: 30px;
+        margin-right: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+        color: #4d4d4d;
+        border-right: 3px solid Variables.$accent;
+
+        &.hidden {
+            visibility: hidden;
+        }
+    }
+}
+
+.cart-icon {
+    color: #4d4d4d;
+
+    &:hover {
+        color: Variables.$accent;
+    }
+}
+
+.burger-menu-btn {
+    display: none;
+}
+
+.close-menu-btn {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    .header.mobile {
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        overflow: auto;
+    }
+
+    .header__container.mobile {
+        flex-direction: column;
+        align-items: inherit;
+        height: auto;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .logo.mobile {
+        padding-bottom: 15px;
+    }
+
+    .nav {
+        display: none;
+
+        &__item {
+            margin: 0;
+            padding: 15px 0;
+
+            &:first-child {
+                border-top: 1px solid #5f5f5f;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid #5f5f5f;
+            }
+
+            &:active {
+                background-color: #5f5f5f;
+                border-radius: 8px;
+            }
+        }
+
+        &__link {
+            transition: none;
+        }
+
+        &.mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .nav.mobile > .nav__item > .nav__link {
+        font-size: 20px;
+        font-weight: 600;
+        color: #4d4d4d;
+    }
+
+    .cart {
+        margin-right: 40px;
+
+        &__count {
+            font-size: 20px;
+            font-weight: 600;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        &.mobile {
+            justify-content: flex-start;
+            margin: 0;
+            padding-top: 15px;
+            width: 100%;
+
+            > .nav__link.cart__icon {
+                width: 100%;
+            }
+        }
+    }
+
+    .cart-icon {
+        font-weight: 600;
+    }
+
+    .burger-menu-btn {
+        width: 24px;
+        height: 24px;
+        display: block;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .close-menu-btn {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+        line-height: 1.2;
+        color: #4d4d4d;
+
+        &.hidden {
+            display: none;
+        }
+    }
+}

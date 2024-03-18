@@ -1,0 +1,40 @@
+.cakes {
+  width: 100%;
+  padding: 60px 40px 70px;
+  background-color: rgba(251, 229, 200, 0.5);
+}
+.cakes__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.cakes__title {
+  margin: 0 0 30px 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+.cakes__filters {
+  display: flex;
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+  overflow: auto;
+}
+.cakes__cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .cakes__filters {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .cakes {
+    padding: 60px 30px 70px;
+  }
+}/*# sourceMappingURL=Cakes.css.map */

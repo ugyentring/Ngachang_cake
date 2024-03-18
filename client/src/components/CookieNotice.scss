@@ -1,0 +1,56 @@
+@use "../Variables";
+
+.cookie-notice {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 800px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 15px 30px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.2);
+        opacity: 0.9;
+    }
+
+    &__text {
+        margin-right: 20px;
+        max-width: 600px;
+        font-size: 16px;
+    }
+
+    &__link {
+        color: Variables.$accent;
+    }
+
+    &__button {
+        min-width: 120px;
+        font-size: 16px;
+        color: #fff;
+        background-color: Variables.$accent;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    &.hidden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cookie-notice {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__text {
+            margin: 0 0 20px 0;
+        }
+    }
+}

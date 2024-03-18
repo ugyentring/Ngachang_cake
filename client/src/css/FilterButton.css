@@ -1,0 +1,15 @@
+.filter__button {
+  margin-right: 10px;
+  padding: 5px 15px;
+  color: #b1b1b1;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(233, 84, 104, 0.5);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter__button[aria-pressed=true] {
+  color: #4d4d4d;
+  border-color: #E95468;
+}/*# sourceMappingURL=FilterButton.css.map */

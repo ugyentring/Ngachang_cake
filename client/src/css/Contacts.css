@@ -1,0 +1,117 @@
+.contacts {
+  display: flex;
+  flex-grow: 1;
+  min-height: calc(100vh - 60px - 170px);
+  width: 100%;
+  padding: 40px 40px 60px 40px;
+  background-color: #fff;
+}
+.contacts__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.contacts__title {
+  margin: 0 0 30px 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+.contacts__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
+  grid-gap: 60px;
+}
+.contacts__map {
+  width: 100%;
+}
+.contacts__map-iframe {
+  width: 100%;
+  height: 100%;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.contacts__phone-part {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  background-color: rgba(251, 229, 200, 0.5);
+}
+.contacts__phone {
+  display: flex;
+  margin-right: 15px;
+}
+.contacts__email {
+  display: flex;
+}
+.contacts__phone > .item__title, .contacts__email > .item__title {
+  margin: 0 5px 0 0;
+}
+.contacts__phone > .item__property, .contacts__email > .item__property {
+  margin: 0;
+}
+.contacts__item {
+  margin: 0 0 20px 0;
+  padding: 20px;
+  background-color: rgba(251, 229, 200, 0.5);
+}
+.contacts__item:last-child {
+  margin: 0;
+}
+
+.item__title {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #b1b1b1;
+}
+.item__property {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.item__property.address {
+  font-size: 18px;
+  font-weight: 500;
+}
+.item__property.link {
+  display: inline-block;
+  font-weight: 500;
+  color: #4b4b4b;
+}
+.item__property.link:hover {
+  color: #E95468;
+}
+
+@media screen and (max-width: 1300px) {
+  .contacts__content {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .contacts__map {
+    height: 300px;
+  }
+  .contacts__list {
+    grid-row: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    min-height: calc(100vh - 60px - 290px);
+  }
+  .contacts__phone-part {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contacts__phone {
+    margin: 0 0 15px 0;
+  }
+  .contacts__phone, .contacts__email {
+    flex-direction: column;
+  }
+  .contacts__phone > .item__title, .contacts__email > .item__title {
+    margin: 0 0 5px 0;
+  }
+}/*# sourceMappingURL=Contacts.css.map */
